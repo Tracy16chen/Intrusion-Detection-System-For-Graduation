@@ -24,7 +24,7 @@ print(InD.shape)
 Dt=InD[:,:-1].astype(float)
 
 # #选不为空的特征中的lable值
-LNMV=InD[~np.isnan(InD).any(axis=1),-1]
+LNMV=InD[~np.isnan(Dt).any(axis=1),-1]
 # #选非lable值不为空的
 DtNMV=Dt[~np.isnan(Dt).any(axis=1)]
 
